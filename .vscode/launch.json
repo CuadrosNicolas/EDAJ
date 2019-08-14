@@ -1,0 +1,25 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ParserTest",
+			"request": "launch",
+			"mainClass": "org.soft.analysis.SourceCodeAnalysis.ParserTest",
+			"projectName": "analysis"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ParserTest",
+			"request": "launch",
+			"mainClass": "org.soft.analysis.ParserTest",
+			"projectName": "analysis"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - App",
+			"request": "launch",
+			"mainClass": "org.soft.analysis.App",
+			"projectName": "analysis"
+		}
+	]
+}
