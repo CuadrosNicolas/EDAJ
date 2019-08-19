@@ -32,7 +32,7 @@ public class App
         public static void main(String[] args)
     {
         System.out.println("LOOKING FOR DEPENDENCIES");
-        PomLoader test = new PomLoader("/pom.xml");
+        PomLoader test = new PomLoader(args[0] +"/pom.xml");
         ArrayList<PomDependency> dep = test.load();
         ArrayList<String> externalLib = new ArrayList<String>();
         ProjectTypes types = new ProjectTypes();
@@ -47,7 +47,7 @@ public class App
             }
         }
         System.out.println("EXTRACTING PROJECT CLASSES");
-        ArrayList<String> t = LocalTypeSearch.TypeSearch("./src");
+        ArrayList<String> t = LocalTypeSearch.TypeSearch(args[0] +"/src");
         externalLib.add("local");
         for(String s : t)
         {

@@ -24,7 +24,7 @@ public class PomDependency {
 	}
 	public List<Clazz> load()
 	{
-		Loader l = new Loader("/home/cuacua/.m2/repository/"+String.join("/", groupId.split("\\."))+"/"+ String.join("/", artifactId.split("\\."))+"/"+version+"/"+artifactId+"-"+version+".jar");
+		Loader l = new Loader("/home/"+System.getProperty("user.name")+"/.m2/repository/"+String.join("/", groupId.split("\\."))+"/"+ String.join("/", artifactId.split("\\."))+"/"+version+"/"+artifactId+"-"+version+".jar");
 		try{
 
 			representations = l.loadAndScanJar();
